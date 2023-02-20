@@ -1,0 +1,138 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity Controlador_display_paralelo is
+	port(
+		signal CLK_50 : in std_logic;
+		signal RESET  : in std_logic;
+		signal KEY	  : in std_logic_vector(3 downto 0);
+		signal HEX1, HEX3, HEX2, HEX4	  : out std_logic;
+		signal SEG	  : out std_logic_vector(6 downto 0)
+	);
+	
+end entity Controlador_display_paralelo;
+
+
+architecture hardware of Controlador_display_paralelo is
+
+
+
+type state is (disp1, disp2, disp3);
+
+signal display_mux : state := disp1;
+
+component Conv7_seg is
+	port(
+		signal enable	  	: in std_logic;
+		signal dado			: in std_logic_vector(3 downto 0);
+		signal display	  		: out std_logic_vector(6 downto 0)
+	);
+	
+end component Conv7_seg;
+
+signal dado, dado1, dado2, dado3, dado4 : std_logic_vector(3 downto 0);
+signal enable1, enable2, enable3, enable4, local1, local2, local3, local4 : std_logic := '1';
+signal start1, start2, start3, start4, start_generic : std_logic := '1';
+signal local : std_logic_vector(1 downto 0) := "00";
+signal contador1, contador2 : unsigned(29 downto 0) := (others => '0');
+type state_machine is (disp1, disp2, disp3, disp4);
+signal mux_display : state_machine;
+signal display, display1, display2, display3, display4 : std_logic_vector (6 downto 0);
+signal clk : std_logic;
+
+begin
+	
+	clk <= CLK_50;
+	
+	HEX1 <= not enable1;
+	HEX2 <= not enable2;
+	HEX3 <= not enable3;
+	HEX4 <= not enable4;
+	SEG <= display;
+	
+	start1 <= '0';
+	start2 <= '1';
+	start3 <= '0';
+	start4 <= '0';
+	
+	local1 <= '0';
+	local2 <= '1';
+	local3 <= '0';
+	local4 <= '0';
+	
+	dado1 <= X"0";
+	dado2 <= X"1";
+	dado3 <= X"0";
+	dado4 <= X"0";
+	
+	MUX  : process(clk, RESET) is
+	begin
+		if RESET = '0' then
+			contador1 <= (others => '0');
+			
+		else
+			if falling_edge(clk) then
+				if(contador1 < 49999) then	--contador de 10 ms
+					contador1 <= contador1 + 1;
+				else
+					contador1 <= (others => '0');
+					case mux_display is
+						when disp1 =>
+							enable1 <= '1';
+							enable4 <= '0';
+							mux_display <= disp2;
+							
+						when disp2 =>
+							enable2 <= '1';
+							enable1 <= '0';
+							mux_display <= disp3;
+						
+						when disp3 =>
+							enable3<= '1';
+							enable2 <= '0';
+							mux_display <= disp4;
+							
+						when disp4 =>
+							enable4 <= '1';
+							enable3 <= '0';
+							mux_display <= disp1;
+					end case;
+				end if;
+			end if;
+		end if;
+	end process MUX;
+	
+	TICK : process (clk, RESET) is
+	
+	begin
+		if RESET = '0' then
+				contador2 <= (others => '0');
+		else
+			if falling_edge(clk) then
+				if(contador2 < 49999999) then
+					contador2 <= contador2 + 1;
+				else
+					contador2 <= (others => '0');
+				end if;
+			end if;
+		end if;
+	end process TICK;
+	
+	
+	dado <= dado1 when start1 = '1' else
+			  dado2 when start2 = '1' else
+			  dado3 when start3 = '1' else
+			  dado4 when start4 = '1' else
+			  (others=>'0') ;
+	
+	display <= display1 when local1 = '1' else
+				  display2 when local2 = '1' else
+				  display3 when local3 = '1' else
+				  display4 when local4 = '1';
+
+show_display1 : conv7_seg port map(enable1, dado1, display1);
+show_display2 : conv7_seg port map(enable2, dado2, display2);
+show_display3 : conv7_seg port map(enable3, dado3, display3);
+show_display4 : conv7_seg port map(enable4, dado4, display4);
+end architecture hardware;

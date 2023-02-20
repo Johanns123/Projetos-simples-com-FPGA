@@ -1,0 +1,31 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity Hello_World_from_Nios_II is
+	port(
+		signal CLK_50 : in std_logic;
+		signal RESET  : in std_logic;
+		signal KEY	  : in std_logic_vector(3 downto 0);
+		signal LEDY   : out std_logic_vector(3 downto 0)
+	);
+	
+end entity Hello_World_from_Nios_II;
+
+
+architecture hardware of Hello_World_from_Nios_II is
+
+signal led : std_logic_vector (3 downto 0);
+signal clk : std_logic;
+
+
+begin
+		
+LEDY(0) <= not led(3);
+LEDY(1) <= not led(2);
+LEDY(2) <= not led(1);
+LEDY(3) <= not led(0);
+clk  <= CLK_50;
+
+
+end architecture hardware;

@@ -1,0 +1,7 @@
+
+State Machine - |Projeto_cont_disp|Controlador_display_paralelo:cont_disp|mux_display
+Name mux_display.disp4 mux_display.disp3 mux_display.disp2 mux_display.disp1 
+mux_display.disp1 0 0 0 0 
+mux_display.disp2 0 0 1 1 
+mux_display.disp3 0 1 0 1 
+mux_display.disp4 1 0 0 1 

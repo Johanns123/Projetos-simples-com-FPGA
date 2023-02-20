@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLK_50'
+Slack : -4.153
+TNS   : -376.714
+
+Type  : Slow 1200mV 85C Model Setup 'Controlador_display_paralelo:cont_disp|enable1'
+Slack : -3.100
+TNS   : -18.990
+
+Type  : Slow 1200mV 85C Model Setup 'Controlador_display_paralelo:cont_disp|clk_1ms'
+Slack : -2.361
+TNS   : -41.912
+
+Type  : Slow 1200mV 85C Model Setup 'KEY[3]'
+Slack : -2.107
+TNS   : -16.510
+
+Type  : Slow 1200mV 85C Model Hold 'Controlador_display_paralelo:cont_disp|enable1'
+Slack : -1.102
+TNS   : -5.980
+
+Type  : Slow 1200mV 85C Model Hold 'CLK_50'
+Slack : -0.298
+TNS   : -0.298
+
+Type  : Slow 1200mV 85C Model Hold 'Controlador_display_paralelo:cont_disp|clk_1ms'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'KEY[3]'
+Slack : 1.201
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK_50'
+Slack : -3.000
+TNS   : -157.648
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'KEY[3]'
+Slack : -3.000
+TNS   : -16.383
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Controlador_display_paralelo:cont_disp|clk_1ms'
+Slack : -1.487
+TNS   : -32.714
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Controlador_display_paralelo:cont_disp|enable1'
+Slack : 0.256
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'CLK_50'
+Slack : -3.797
+TNS   : -343.410
+
+Type  : Slow 1200mV 0C Model Setup 'Controlador_display_paralelo:cont_disp|enable1'
+Slack : -3.063
+TNS   : -18.525
+
+Type  : Slow 1200mV 0C Model Setup 'Controlador_display_paralelo:cont_disp|clk_1ms'
+Slack : -2.118
+TNS   : -36.817
+
+Type  : Slow 1200mV 0C Model Setup 'KEY[3]'
+Slack : -1.932
+TNS   : -15.027
+
+Type  : Slow 1200mV 0C Model Hold 'Controlador_display_paralelo:cont_disp|enable1'
+Slack : -0.959
+TNS   : -4.833
+
+Type  : Slow 1200mV 0C Model Hold 'CLK_50'
+Slack : -0.325
+TNS   : -0.325
+
+Type  : Slow 1200mV 0C Model Hold 'Controlador_display_paralelo:cont_disp|clk_1ms'
+Slack : 0.418
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'KEY[3]'
+Slack : 1.072
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK_50'
+Slack : -3.000
+TNS   : -157.648
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'KEY[3]'
+Slack : -3.000
+TNS   : -16.383
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Controlador_display_paralelo:cont_disp|clk_1ms'
+Slack : -1.487
+TNS   : -32.714
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Controlador_display_paralelo:cont_disp|enable1'
+Slack : 0.066
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLK_50'
+Slack : -1.195
+TNS   : -98.586
+
+Type  : Fast 1200mV 0C Model Setup 'Controlador_display_paralelo:cont_disp|enable1'
+Slack : -0.997
+TNS   : -6.150
+
+Type  : Fast 1200mV 0C Model Setup 'Controlador_display_paralelo:cont_disp|clk_1ms'
+Slack : -0.443
+TNS   : -4.787
+
+Type  : Fast 1200mV 0C Model Setup 'KEY[3]'
+Slack : -0.396
+TNS   : -2.409
+
+Type  : Fast 1200mV 0C Model Hold 'Controlador_display_paralelo:cont_disp|enable1'
+Slack : -0.627
+TNS   : -3.763
+
+Type  : Fast 1200mV 0C Model Hold 'CLK_50'
+Slack : -0.541
+TNS   : -0.541
+
+Type  : Fast 1200mV 0C Model Hold 'Controlador_display_paralelo:cont_disp|clk_1ms'
+Slack : 0.191
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'KEY[3]'
+Slack : 0.446
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK_50'
+Slack : -3.000
+TNS   : -118.049
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'KEY[3]'
+Slack : -3.000
+TNS   : -12.954
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Controlador_display_paralelo:cont_disp|clk_1ms'
+Slack : -1.000
+TNS   : -22.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Controlador_display_paralelo:cont_disp|enable1'
+Slack : 0.340
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="HelloWorld_from_NIOS_II">
+		<CBX_INST_ENTRY INSTANCE_NAME="|HelloWorld_from_NIOS_II|JSJCCA_QSYS:Processor|JSJCCA_QSYS_jtag_uart:jtag_uart|JSJCCA_QSYS_jtag_uart_scfifo_w:the_JSJCCA_QSYS_jtag_uart_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_jr21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HelloWorld_from_NIOS_II|JSJCCA_QSYS:Processor|JSJCCA_QSYS_nios2_qsys:nios2_qsys|JSJCCA_QSYS_nios2_qsys_nios2_oci:the_JSJCCA_QSYS_nios2_qsys_nios2_oci|JSJCCA_QSYS_nios2_qsys_nios2_ocimem:the_JSJCCA_QSYS_nios2_qsys_nios2_ocimem|JSJCCA_QSYS_nios2_qsys_ociram_sp_ram_module:JSJCCA_QSYS_nios2_qsys_ociram_sp_ram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_km81.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HelloWorld_from_NIOS_II|JSJCCA_QSYS:Processor|JSJCCA_QSYS_nios2_qsys:nios2_qsys|JSJCCA_QSYS_nios2_qsys_register_bank_a_module:JSJCCA_QSYS_nios2_qsys_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_g9h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HelloWorld_from_NIOS_II|JSJCCA_QSYS:Processor|JSJCCA_QSYS_nios2_qsys:nios2_qsys|JSJCCA_QSYS_nios2_qsys_register_bank_b_module:JSJCCA_QSYS_nios2_qsys_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_h9h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HelloWorld_from_NIOS_II|JSJCCA_QSYS:Processor|JSJCCA_QSYS_jtag_uart:jtag_uart|JSJCCA_QSYS_jtag_uart_scfifo_r:the_JSJCCA_QSYS_jtag_uart_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_jr21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|HelloWorld_from_NIOS_II|JSJCCA_QSYS:Processor|JSJCCA_QSYS_onchip_memory2:onchip_memory2|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_ibd1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

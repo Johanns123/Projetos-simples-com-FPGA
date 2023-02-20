@@ -1,0 +1,164 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=F:/Estudos/HelloWorld_from_NIOS_II/ --output-directory=F:/Estudos/HelloWorld_from_NIOS_II/JSJCCA_QSYS/ --report-file=bsf:F:/Estudos/HelloWorld_from_NIOS_II/JSJCCA_QSYS.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE6E22C8 --system-info=DEVICE_SPEEDGRADE=8 --component-file=F:/Estudos/HelloWorld_from_NIOS_II/JSJCCA_QSYS.qsys
+Progress: Loading HelloWorld_from_NIOS_II/JSJCCA_QSYS.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding nios2_qsys [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart
+Progress: Adding timer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module timer
+Progress: Adding led_yellow [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module led_yellow
+Progress: Adding key [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module key
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: JSJCCA_QSYS.key: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=F:/Estudos/HelloWorld_from_NIOS_II/ --output-directory=F:/Estudos/HelloWorld_from_NIOS_II/JSJCCA_QSYS/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:F:/Estudos/HelloWorld_from_NIOS_II/JSJCCA_QSYS.sopcinfo --report-file=html:F:/Estudos/HelloWorld_from_NIOS_II/JSJCCA_QSYS.html --report-file=qip:F:/Estudos/HelloWorld_from_NIOS_II/JSJCCA_QSYS/synthesis/JSJCCA_QSYS.qip --report-file=cmp:F:/Estudos/HelloWorld_from_NIOS_II/JSJCCA_QSYS.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE6E22C8 --system-info=DEVICE_SPEEDGRADE=8 --component-file=F:/Estudos/HelloWorld_from_NIOS_II/JSJCCA_QSYS.qsys --language=VHDL
+Progress: Loading HelloWorld_from_NIOS_II/JSJCCA_QSYS.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding nios2_qsys [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys
+Progress: Adding onchip_memory2 [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory2
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart
+Progress: Adding timer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module timer
+Progress: Adding led_yellow [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module led_yellow
+Progress: Adding key [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module key
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: JSJCCA_QSYS.key: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: JSJCCA_QSYS: Generating JSJCCA_QSYS "JSJCCA_QSYS" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 7 modules, 26 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 15 modules, 50 connections
+Info: merlin_domain_transform: After transform: 30 modules, 124 connections
+Info: merlin_router_transform: After transform: 38 modules, 148 connections
+Info: reset_adaptation_transform: After transform: 39 modules, 150 connections
+Info: merlin_network_to_switch_transform: After transform: 54 modules, 190 connections
+Info: merlin_mm_transform: After transform: 54 modules, 190 connections
+Info: merlin_interrupt_mapper_transform: After transform: 55 modules, 193 connections
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: JSJCCA_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Info: nios2_qsys: Starting RTL generation for module 'JSJCCA_QSYS_nios2_qsys'
+Info: nios2_qsys:   Generation command is [exec F:/altera/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I F:/altera/quartus/common/ip/altera/common/perl/5.8.3 -I F:/altera/quartus/sopc_builder/bin/europa -I F:/altera/quartus/sopc_builder/bin/perl_lib -I F:/altera/quartus/sopc_builder/bin -I F:/altera/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I F:/altera/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I F:/altera/quartus/../ip/altera/nios2_ip/altera_nios2 -I F:/altera/quartus/../ip/altera/nios2_ip/altera_nios2 -- F:/altera/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=JSJCCA_QSYS_nios2_qsys --dir=C:/Users/johan/AppData/Local/Temp/alt9397_1305356363914402374.dir/0001_nios2_qsys_gen/ --quartus_dir=F:/altera/quartus --verilog --config=C:/Users/johan/AppData/Local/Temp/alt9397_1305356363914402374.dir/0001_nios2_qsys_gen//JSJCCA_QSYS_nios2_qsys_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: nios2_qsys: # 2023.02.09 00:13:05 (*) Starting Nios II generation
+Info: nios2_qsys: # 2023.02.09 00:13:05 (*)   Checking for plaintext license.
+Info: nios2_qsys: # 2023.02.09 00:13:05 (*)   Couldn't query license setup in Quartus directory F:/altera/quartus
+Info: nios2_qsys: # 2023.02.09 00:13:05 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_qsys: # 2023.02.09 00:13:05 (*)   LM_LICENSE_FILE environment variable is empty
+Info: nios2_qsys: # 2023.02.09 00:13:05 (*)   Plaintext license not found.
+Info: nios2_qsys: # 2023.02.09 00:13:05 (*)   No license required to generate encrypted Nios II/e.
+Info: nios2_qsys: # 2023.02.09 00:13:05 (*)   Elaborating CPU configuration settings
+Info: nios2_qsys: # 2023.02.09 00:13:05 (*)   Creating all objects for CPU
+Info: nios2_qsys: # 2023.02.09 00:13:07 (*)   Generating RTL from CPU objects
+Info: nios2_qsys: # 2023.02.09 00:13:07 (*)   Creating plain-text RTL
+Info: nios2_qsys: # 2023.02.09 00:13:09 (*) Done Nios II generation
+Info: nios2_qsys: Done RTL generation for module 'JSJCCA_QSYS_nios2_qsys'
+Info: nios2_qsys: "JSJCCA_QSYS" instantiated altera_nios2_qsys "nios2_qsys"
+Info: onchip_memory2: Starting RTL generation for module 'JSJCCA_QSYS_onchip_memory2'
+Info: onchip_memory2:   Generation command is [exec F:/altera/quartus/bin/perl/bin/perl.exe -I F:/altera/quartus/common/ip/altera/common/perl/5.8.3 -I F:/altera/quartus/sopc_builder/bin/europa -I F:/altera/quartus/sopc_builder/bin/perl_lib -I F:/altera/quartus/sopc_builder/bin -I F:/altera/quartus/../ip/altera/sopc_builder_ip/common -I F:/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- F:/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=JSJCCA_QSYS_onchip_memory2 --dir=C:/Users/johan/AppData/Local/Temp/alt9397_1305356363914402374.dir/0002_onchip_memory2_gen/ --quartus_dir=F:/altera/quartus --verilog --config=C:/Users/johan/AppData/Local/Temp/alt9397_1305356363914402374.dir/0002_onchip_memory2_gen//JSJCCA_QSYS_onchip_memory2_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2: Done RTL generation for module 'JSJCCA_QSYS_onchip_memory2'
+Info: onchip_memory2: "JSJCCA_QSYS" instantiated altera_avalon_onchip_memory2 "onchip_memory2"
+Info: jtag_uart: Starting RTL generation for module 'JSJCCA_QSYS_jtag_uart'
+Info: jtag_uart:   Generation command is [exec F:/altera/quartus/bin/perl/bin/perl.exe -I F:/altera/quartus/common/ip/altera/common/perl/5.8.3 -I F:/altera/quartus/sopc_builder/bin/europa -I F:/altera/quartus/sopc_builder/bin/perl_lib -I F:/altera/quartus/sopc_builder/bin -I F:/altera/quartus/../ip/altera/sopc_builder_ip/common -I F:/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- F:/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=JSJCCA_QSYS_jtag_uart --dir=C:/Users/johan/AppData/Local/Temp/alt9397_1305356363914402374.dir/0003_jtag_uart_gen/ --quartus_dir=F:/altera/quartus --verilog --config=C:/Users/johan/AppData/Local/Temp/alt9397_1305356363914402374.dir/0003_jtag_uart_gen//JSJCCA_QSYS_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'JSJCCA_QSYS_jtag_uart'
+Info: jtag_uart: "JSJCCA_QSYS" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: timer: Starting RTL generation for module 'JSJCCA_QSYS_timer'
+Info: timer:   Generation command is [exec F:/altera/quartus/bin/perl/bin/perl.exe -I F:/altera/quartus/common/ip/altera/common/perl/5.8.3 -I F:/altera/quartus/sopc_builder/bin/europa -I F:/altera/quartus/sopc_builder/bin/perl_lib -I F:/altera/quartus/sopc_builder/bin -I F:/altera/quartus/../ip/altera/sopc_builder_ip/common -I F:/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- F:/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=JSJCCA_QSYS_timer --dir=C:/Users/johan/AppData/Local/Temp/alt9397_1305356363914402374.dir/0004_timer_gen/ --quartus_dir=F:/altera/quartus --verilog --config=C:/Users/johan/AppData/Local/Temp/alt9397_1305356363914402374.dir/0004_timer_gen//JSJCCA_QSYS_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: timer: Done RTL generation for module 'JSJCCA_QSYS_timer'
+Info: timer: "JSJCCA_QSYS" instantiated altera_avalon_timer "timer"
+Info: led_yellow: Starting RTL generation for module 'JSJCCA_QSYS_led_yellow'
+Info: led_yellow:   Generation command is [exec F:/altera/quartus/bin/perl/bin/perl.exe -I F:/altera/quartus/common/ip/altera/common/perl/5.8.3 -I F:/altera/quartus/sopc_builder/bin/europa -I F:/altera/quartus/sopc_builder/bin/perl_lib -I F:/altera/quartus/sopc_builder/bin -I F:/altera/quartus/../ip/altera/sopc_builder_ip/common -I F:/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- F:/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=JSJCCA_QSYS_led_yellow --dir=C:/Users/johan/AppData/Local/Temp/alt9397_1305356363914402374.dir/0005_led_yellow_gen/ --quartus_dir=F:/altera/quartus --verilog --config=C:/Users/johan/AppData/Local/Temp/alt9397_1305356363914402374.dir/0005_led_yellow_gen//JSJCCA_QSYS_led_yellow_component_configuration.pl  --do_build_sim=0  ]
+Info: led_yellow: Done RTL generation for module 'JSJCCA_QSYS_led_yellow'
+Info: led_yellow: "JSJCCA_QSYS" instantiated altera_avalon_pio "led_yellow"
+Info: key: Starting RTL generation for module 'JSJCCA_QSYS_key'
+Info: key:   Generation command is [exec F:/altera/quartus/bin/perl/bin/perl.exe -I F:/altera/quartus/common/ip/altera/common/perl/5.8.3 -I F:/altera/quartus/sopc_builder/bin/europa -I F:/altera/quartus/sopc_builder/bin/perl_lib -I F:/altera/quartus/sopc_builder/bin -I F:/altera/quartus/../ip/altera/sopc_builder_ip/common -I F:/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- F:/altera/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=JSJCCA_QSYS_key --dir=C:/Users/johan/AppData/Local/Temp/alt9397_1305356363914402374.dir/0006_key_gen/ --quartus_dir=F:/altera/quartus --verilog --config=C:/Users/johan/AppData/Local/Temp/alt9397_1305356363914402374.dir/0006_key_gen//JSJCCA_QSYS_key_component_configuration.pl  --do_build_sim=0  ]
+Info: key: Done RTL generation for module 'JSJCCA_QSYS_key'
+Info: key: "JSJCCA_QSYS" instantiated altera_avalon_pio "key"
+Info: nios2_qsys_instruction_master_translator: "JSJCCA_QSYS" instantiated altera_merlin_master_translator "nios2_qsys_instruction_master_translator"
+Info: nios2_qsys_jtag_debug_module_translator: "JSJCCA_QSYS" instantiated altera_merlin_slave_translator "nios2_qsys_jtag_debug_module_translator"
+Info: nios2_qsys_instruction_master_translator_avalon_universal_master_0_agent: "JSJCCA_QSYS" instantiated altera_merlin_master_agent "nios2_qsys_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_qsys_jtag_debug_module_translator_avalon_universal_slave_0_agent: "JSJCCA_QSYS" instantiated altera_merlin_slave_agent "nios2_qsys_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_qsys_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "JSJCCA_QSYS" instantiated altera_avalon_sc_fifo "nios2_qsys_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "JSJCCA_QSYS" instantiated altera_merlin_router "addr_router"
+Info: id_router: "JSJCCA_QSYS" instantiated altera_merlin_router "id_router"
+Info: rst_controller: "JSJCCA_QSYS" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "JSJCCA_QSYS" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_mux: "JSJCCA_QSYS" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: "JSJCCA_QSYS" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_mux: "JSJCCA_QSYS" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file F:/Estudos/HelloWorld_from_NIOS_II/JSJCCA_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: irq_mapper: "JSJCCA_QSYS" instantiated altera_irq_mapper "irq_mapper"
+Info: JSJCCA_QSYS: Done JSJCCA_QSYS" with 20 modules, 96 files, 1963793 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

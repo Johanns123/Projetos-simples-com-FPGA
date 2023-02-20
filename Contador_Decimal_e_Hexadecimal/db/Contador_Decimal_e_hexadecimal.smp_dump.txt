@@ -1,0 +1,6 @@
+
+State Machine - |Contador_Decimal_e_hexadecimal|display_mux
+Name display_mux.disp3 display_mux.disp2 display_mux.disp1 
+display_mux.disp1 0 0 0 
+display_mux.disp2 0 1 1 
+display_mux.disp3 1 0 1 
